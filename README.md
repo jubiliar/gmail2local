@@ -1,11 +1,17 @@
 # gmail2local
 modify this in the script
 const CLIENT_ID = "client_id"; - client_id is extracted from https://console.cloud.google.com/apis/credentials under OAuth 2.0 Client IDs
+
 const CLIENT_SECRET = 'client_secret'; - client_secret is extracted from https://console.cloud.google.com/apis/credentials under OAuth 2.0 Client IDs
+
 const EMAIL_ADDRESS = 'email@gmail.com'; - this represents the mail from where to download the attachments
+
 const SAVE_PATH = 'G:\\folder\\file_prefix_'; - this is the local path where the attachments will be download
+
 access_token: "access_token", - access_token I extracted from https://developers.google.com/oauthplayground/. The script can be adapted to do this step automatically but this is what we have 
+
 refresh_token: "refresh_token",- refresh_token I extracted from https://developers.google.com/oauthplayground/. The script can be adapted to do this step automatically but this is what we have 
+
 expiry_date: '2023-11-04T10:07:32.000Z', - put here the tomorrow date.
 
 //q: `from:${EMAIL_ADDRESS}`,//use this to download from INBOX - uncomment this to retrieve attachments from inbox and comment the q: `from:${EMAIL_ADDRESS} in:sent`
